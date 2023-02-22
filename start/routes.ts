@@ -27,3 +27,7 @@ Route.group(() => {
   Route.put("/", "ActorsController.update");
   Route.delete("/:id", "ActorsController.destory");
 }).prefix("/actors");
+
+Route.get('/', async () => {
+  return { hello: 'world' }
+})
